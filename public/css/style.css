@@ -1,0 +1,294 @@
+/* General Styles */
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Navbar */
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+/* Toggle Switch - Beautified */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* Dark Mode Active */
+input:checked + .slider {
+    background-color: #fe424d;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+/* Small Shadow Effect */
+.slider:before {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Bar */
+.btn-search {
+    background-color: #fe424d !important;
+    color: white !important;
+    border-radius: 25px !important;
+    padding: 0 1rem 0 1rem !important;
+    border: none !important;
+}
+
+.btn-search:hover {
+    background-color: white !important;
+    color: #fe424d !important;
+    border: 1px solid #fe424d !important;
+}
+
+.btn-search i {
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.search-input {
+    border-radius: 25px !important;
+    padding: 0.5rem 3rem 0.5rem 3rem !important;
+    font-size: 1rem !important;
+    border: 1px solid #ddd !important;
+}
+
+/* Footer */
+.f-finfo-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-finfo-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-social,
+.f-finfo-links,
+.f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-social i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    margin-top: 0.7rem;
+}
+
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* Cards */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+}
+
+.listing-link {
+    text-decoration: none !important;
+}
+
+/* Card Effect */
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* New Page Buttons */
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Show Page */
+.show-img {
+    height: 30vh;
+}
+
+/* Filters */
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter {
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+}
+
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.filter p {
+    font-size: 0.8rem;
+}
+
+/* Tax Toggle */
+.tax-info {
+    display: none;
+}
+
+.tax-toggle {
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 3.25rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212 !important;
+    color: white !important;
+}
+
+/* Navbar Dark Mode */
+.dark-mode .navbar {
+    background-color: #1e1e1e !important;
+    border-bottom: 1px solid #333 !important;
+}
+
+.dark-mode .nav-link {
+    color: white !important;
+}
+
+/* Search Bar Dark Mode */
+.dark-mode .btn-search {
+    background-color: white !important;
+    color: #fe424d !important;
+    border: 1px solid #fe424d !important;
+}
+
+.dark-mode .btn-search:hover {
+    background-color: #fe424d !important;
+    color: white !important;
+}
+
+.dark-mode .search-input {
+    background-color: #222 !important;
+    color: white !important;
+    border: 1px solid #555 !important;
+}
+
+.dark-mode .search-input::placeholder {
+    color: #bbb !important;
+}
+
+/* Footer Dark Mode */
+.dark-mode .f-info {
+    background-color: #1e1e1e !important;
+    color: white !important;
+    border-top: 1px solid #333 !important;
+}
+
+.dark-mode .f-info a {
+    color: #bbb !important;
+}
+
+.dark-mode .f-info a:hover {
+    color: white !important;
+}
+
+.dark-mode .f-info-social i {
+    color: white !important;
+}
+
+/* Tax Toggle Dark Mode */
+.dark-mode .tax-toggle {
+    border: 1px solid white !important;
+    color: white !important;
+}
