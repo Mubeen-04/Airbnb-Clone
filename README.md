@@ -1,6 +1,6 @@
-# WanderLust
+# Staynest
 
-Wanderlust is a web application inspired by Airbnb that enables users to explore, book, and review various accommodations around the globe. Built using the MERN stack (excluding React), it focuses on providing an intuitive and functional user experience.
+Staynest is a web application inspired by Airbnb that enables users to explore, book, and review various accommodations around the globe. Built using the MERN stack (excluding React), it focuses on providing an intuitive and functional user experience.
 
 ## Features
 
@@ -27,7 +27,7 @@ Wanderlust is a web application inspired by Airbnb that enables users to explore
 ## Project Structure
 
 ```plaintext
-wanderlust/
+Staynest/
 ├── init/            # Initialization scripts for seeding data
 │   ├── data.js      # Data seeding script
 │   └── index.js     # Script entry point for initialization
@@ -63,7 +63,7 @@ wanderlust/
 
 ## Installation and Setup
 
-Follow these steps to set up and run Wanderlust on your local machine:
+Follow these steps to set up and run Staynest on your local machine:
 
 ### Prerequisites
 
@@ -74,12 +74,12 @@ Follow these steps to set up and run Wanderlust on your local machine:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/wanderlust.git
+   git clone https://github.com/yourusername/Staynest.git
    ```
 
 2. **Navigate to the Project Directory**:
    ```bash
-   cd wanderlust
+   cd Staynest
    ```
 
 3. **Install Dependencies**:
@@ -138,7 +138,7 @@ Follow these steps to set up and run Wanderlust on your local machine:
 ## Contributing
 
 Contributions are welcome! 
-This project is actively under development, and new features and improvements are being added. Everyone is welcome to contribute and help enhance Wanderlust!
+This project is actively under development, and new features and improvements are being added. Everyone is welcome to contribute and help enhance Staynest!
 If you’d like to contribute, please follow these steps:
 
 1. Fork the repository.
@@ -167,5 +167,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Feel free to explore and use Wanderlust. If you have any questions or suggestions, feel free to reach out!
+Feel free to explore and use Staynest. If you have any questions or suggestions, feel free to reach out!
 
