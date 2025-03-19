@@ -134,7 +134,7 @@ input:checked + .slider:before {
 
 .f-info {
     text-align: center;
-    height: 8rem;
+    height: 10rem;
     background-color: #ebebeb;
     display: flex;
     flex-wrap: wrap;
