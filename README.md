@@ -160,6 +160,10 @@ If you’d like to contribute, please follow these steps:
 
 This project is licensed under the [MIT License](LICENSE).
 
+## Screenshots
+![image](https://github.com/user-attachments/assets/e5a2980b-5a14-4f0f-af22-13d74ea01cc4)
+
+
 ## Acknowledgments
 
 - Inspired by Airbnb's functionality and design principles.
