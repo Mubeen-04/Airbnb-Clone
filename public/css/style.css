@@ -292,3 +292,68 @@ input:checked + .slider:before {
     border: 1px solid white !important;
     color: white !important;
 }
+
+/* Button */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Default Button Styling */
+.navbar-nav .btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.navbar-nav .btn:hover {
+    transform: scale(1.05);
+}
+
+.navbar-nav .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.navbar-nav .btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.navbar-nav .btn-outline-secondary {
+    border-color: #6c757d;
+    color: #6c757d;
+}
+
+.navbar-nav .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+/* 🔸 Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;  /* Stack buttons vertically */
+        gap: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav .btn {
+        width: 100%;  /* Make buttons full width */
+        font-size: 14px; /* Reduce font size slightly */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-nav .btn {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+}
+
