@@ -63,9 +63,7 @@ const sessionOptions = {
     },
 };
 
-// app.get("/", (req, res) => {
-//     res.render("home");
-// });
+
 
 
 app.use(session(sessionOptions));
@@ -85,6 +83,9 @@ app.use((req,res,next) => {
     next();
 });
 
+app.get("/", (req, res) => {
+    res.render("home");
+});
 // app.get("/demouser" , async (req,res) => {
 //     let fakeUser = new User({
 //         email: "student@gmail.com",

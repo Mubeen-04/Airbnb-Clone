@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: url('/images/hero-bg.jpg') center/cover no-repeat; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.hero div {
+    position: relative;
+    z-index: 1;
+}
+
+/* Features Section */
+.feature-img {
+    width: 200px;  /* Increased width */
+    height: 200px; /* Increased height */
+    object-fit: contain;
+}
+
+/* CTA Section */
+.cta {
+    background: #f8f9fa; /* Light grey to stand out but stay neutral */
+    padding: 80px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cta h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.cta p {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #222;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-btn:hover {
+    background: #444;
+    transform: translateY(-3px);
+}
